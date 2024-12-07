@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block content %}
+<html>
+    <body>
+        
+        <h1>user creation page</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ user.as_p }}
+            <input type="submit" name="add">
+        </form>
+    
+
+    </body>
+</html>
+
+{% endblock %}

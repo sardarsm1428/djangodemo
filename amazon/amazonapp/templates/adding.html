@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block content %}
+<html>
+    <body>
+        <center>
+        <h1>this is autopage page</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ values }}
+            <input type="submit" name="add">
+        </form>
+    </center>
+
+    </body>
+</html>
+
+{% endblock %}

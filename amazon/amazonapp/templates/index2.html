@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% block content %}
+<html>
+    <body>
+        <center>
+        <h1>this is second page</h1>
+        <form method="post">
+            {% csrf_token %}
+            <p>Username
+                <input type="text" name="a">
+            </p>
+            <p>password
+                <input type="text" name="b">
+            </p>
+            <button type="submit">login</button>
+        </form>
+    </center>
+
+    </body>
+</html>
+
+{% endblock %}
